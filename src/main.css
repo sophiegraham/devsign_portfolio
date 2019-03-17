@@ -1,0 +1,64 @@
+/* mobile */
+@media screen and (max-width: 1100px){
+}
+
+/* for all */
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+  grid-area: header;
+  background-color: #969948;
+  height: 70px;
+}
+
+body {
+    // background-color: pink;
+    display: grid;
+    grid-template-areas:"header header"
+                        "content content"
+                        "content content"
+                        "footer footer";
+}
+
+main {
+  grid-area: content;
+  background-color: pink;
+}
+
+footer {
+  grid-area: footer;
+  background-color: powderblue;
+  height: 70px;
+}
+
+
+
+.About{
+  background: blue;
+  display: grid;
+  grid-area: content;
+
+}
+
+.Contact{
+  background: red;
+  display: grid;
+  grid-area: content;
+}
+
+.Work{
+  background: green;
+  display: grid;
+  grid-area: content;
+
+}
+
+li:hover {
+	top: 50%;
+	left: 50%;
+    color: white;
+    text-decoration: none;
+  }
