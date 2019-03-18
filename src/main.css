@@ -9,51 +9,43 @@
 }
 
 header {
+  display: grid;
   grid-area: header;
   background-color: #969948;
-  height: 70px;
 }
 
 body {
-    // background-color: pink;
     display: grid;
     grid-template-areas:"header header"
-                        "content content"
-                        "content content"
+                        "about project"
+                        "contact project"
                         "footer footer";
 }
 
 main {
-  grid-area: content;
+  display: grid;
+  grid-template-areas:"header header"
+                      "about project"
+                      "contact project"
+                      "footer footer";
   background-color: pink;
-}
-
-footer {
-  grid-area: footer;
-  background-color: powderblue;
-  height: 70px;
 }
 
 
 
 .About{
-  background: blue;
   display: grid;
-  grid-area: content;
-
+  grid-area: about;
 }
 
 .Contact{
-  background: red;
   display: grid;
-  grid-area: content;
+  grid-area: contact;
 }
 
 .Work{
-  background: green;
   display: grid;
-  grid-area: content;
-
+  grid-area: project;
 }
 
 li:hover {
@@ -62,3 +54,9 @@ li:hover {
     color: white;
     text-decoration: none;
   }
+
+footer {
+  display: grid;
+  grid-area: footer;
+  background-color: powderblue;
+}
